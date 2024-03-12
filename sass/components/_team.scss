@@ -1,0 +1,42 @@
+@import '../utils/mixins';
+@import '../utils/variables';
+@import '../utils/placeholders';
+
+.team-section.section{
+    @include sections($second-bck-color);
+}
+
+.team{
+    @extend %container;
+    @extend %list;
+    @extend %doFlex;
+
+    &-member{
+        box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+        border-radius: 0px 0px 4px 4px;
+        background-color: $primary-white-color;
+        
+        &-name{
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            color: $title-text-color;
+            font-weight: 500;
+            font-size: 16px;
+            letter-spacing: 0.48px;
+        }
+        &-position{
+            text-align: center;
+            letter-spacing: 0.48px;
+            margin-bottom: 16px;
+        }
+    }
+    &-member + &-member{
+        margin-left: 30px;
+    }
+}
+
+.social-media{
+    @include socialMedia($icon-color, $primary-white-color, $primary-white-color, $accent-color);
+    margin: 0 32px 30px;
+}

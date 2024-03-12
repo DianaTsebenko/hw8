@@ -1,0 +1,34 @@
+@import '../utils/mixins';
+@import '../utils/variables';
+@import '../utils/placeholders';
+
+.advantages{
+    @extend  %container;
+    @extend %doFlex;
+    list-style: none;
+    &-item{
+        width: 270px;
+        &-cont{
+            background-color: $second-bck-color;
+            height: 120px;
+            text-align: center;
+            border-radius: 4px;
+            margin-bottom: 30px;
+        }
+        &-icon{
+            width: 70px;
+            height: 70px;
+            margin: 25px 100px 25px;
+        }
+        
+        &-title{
+            margin: 0;
+            margin-bottom: 10px;
+            @include secondaryTexsts($title-text-color);
+        }
+        
+    }
+    &-item + &-item{
+        margin-left: 30px;
+    }
+}

@@ -1,0 +1,20 @@
+@import '../utils/mixins';
+@import '../utils/variables';
+@import '../utils/placeholders';
+
+
+
+@each $iconLink in clients, socmedia, social{
+    .#{$iconLink}-link{
+        color: currentColor;
+    }
+    .#{$iconLink}-icon{
+        fill: currentColor;
+    }
+}
+.section{
+    @include sections();
+}
+.section-title{
+    @extend %sectionTitle;
+}

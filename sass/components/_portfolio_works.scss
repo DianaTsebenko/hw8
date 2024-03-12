@@ -1,0 +1,70 @@
+@import '../utils/mixins';
+@import '../utils/variables';
+@import '../utils/placeholders';
+
+.work-list{
+    @extend %doFlex;
+    @extend %container;
+    @extend %list;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    column-gap: 30px;
+}
+
+.work{
+    width: 370px;
+    height: 404px;
+    border: 1px solid #EEE; 
+
+    @include useTransition(box-shadow);
+
+    &-title{
+        margin: 20px 0 4px;
+        padding: 0 24px;
+        color: $title-text-color;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 2;
+        letter-spacing: 1.08px;
+    }
+    &-description {
+        margin: 0;
+        margin-bottom: 20px;
+        padding: 0 24px;
+        line-height: 1.87;
+        letter-spacing: 0.48px;
+    }
+    &-thumb{
+        position: relative;
+        height: 294px;
+        overflow: hidden;
+    }
+    &-overlay{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+
+        transform: translateY(101%);
+
+        background-color: rgba(33, 150, 243, 0.90);
+        @include useTransition(transform);
+        &-title{
+            padding: 63px 24px 63px;
+
+            color: $primary-white-color;
+            font-size: 18px;
+            line-height: 1.55;
+            letter-spacing: 0.54px;
+        }
+    
+    }
+    &:hover &-overlay{
+        transform: translateY(0);
+    }
+    &:hover, &:focus{
+        box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+    }
+}

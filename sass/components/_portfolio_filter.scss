@@ -1,0 +1,48 @@
+@import '../utils/mixins';
+@import '../utils/variables';
+@import '../utils/placeholders';
+
+.portfolio{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.filter{
+
+    @extend %doFlex;
+    @extend %container;
+    @extend %list;
+
+    justify-content: center;
+
+
+    &-item:not(:first-child){
+        margin-left: 8px;
+    }
+
+    &-btn {
+        border-radius: 4px;
+        border-color: transparent;
+        padding: 6px 22px;
+      
+        background-color: $bck-color-btn;
+        color: $title-text-color;
+        font-family: inherit;
+        font-weight: 500;
+        line-height: 1.62;
+        letter-spacing: 0.48px;
+        cursor: pointer;
+        
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &.current,
+        &:hover,
+        &:focus {
+            background-color: $accent-color;
+            color: $primary-white-color;
+            box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+        
+      }
+    }
+      
+  }

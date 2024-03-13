@@ -3,6 +3,11 @@
 @import '../utils/placeholders';
 
 
+@media screen and (max-width: 1199px) {
+    .examples-section{
+        display: none;
+    }    
+}
 .examples-list{
     @extend %container;
     @extend %list;

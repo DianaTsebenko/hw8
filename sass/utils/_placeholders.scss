@@ -2,14 +2,20 @@
   display: flex;
 }
 %sectionTitle{
+  color: $title-text-color;
   margin: 0;
   margin-bottom: 50px;
-
-  color: $title-text-color;
   text-align: center;
-  font-size: 36px;
   font-weight: 700;
-  letter-spacing: 1.08px;
+  
+  @media screen and (min-width:480px) {
+    font-size: 28px;
+    letter-spacing: 0.84px;
+  }
+  @media screen and (min-width: 1200px){
+    letter-spacing: 1.08px;
+    font-size: 36px;
+  }
 }
 %container{
     width: 1200px;

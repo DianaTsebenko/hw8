@@ -2,6 +2,7 @@
 @import '../utils/variables';
 
 .logo_header {
+    margin-right: 93px;
     @include logoColor($title-text-color);
 
 }

@@ -3,9 +3,24 @@
 @import '../utils/placeholders';
 
 
+.social-footer{
+    width: 206px;
+    @media screen and (min-width:1200px) {
+        margin-left: 70px;
+    }
+}
+
 .footer-title{
-    margin: 12px 0 20px;
+    margin: 0;
     @include secondaryTexsts($primary-white-color);
+    @media screen and (min-width:480px) {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    @media screen and (min-width:1200px) {
+        text-align: left;
+        margin: 12px 0 20px;
+    }
 }
 .social-list{
     @include socialMedia($primary-white-color, rgba(255, 255, 255, 0.10), $primary-white-color, $accent-color);

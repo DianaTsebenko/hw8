@@ -13,7 +13,6 @@
 }
 
 .logo_footer {
-  margin-right: 93px;
   font-family: Raleway, sans-serif;
   font-size: 26px;
   font-weight: 700;
@@ -26,23 +25,33 @@
   color: #2196f3;
 }
 
-.work-list, .filter, .subscribe, .social-list, .address-title, .div-footer, .clients, .social-media, .team, .examples-list, .advantages, .form-checkbox, .form-field, .form, .address-list-item, .address-list, .navigation, .main-nav {
+.work-list, .filter, .subscribe, .social-list, .address-title, .div-footer, .clients, .social-media, .examples-list, .form-checkbox, .form-field, .form, .address-list-item, .address-list, .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .section-title {
+  color: #212121;
   margin: 0;
   margin-bottom: 50px;
-  color: #212121;
   text-align: center;
-  font-size: 36px;
   font-weight: 700;
-  letter-spacing: 1.08px;
+}
+@media screen and (min-width: 480px) {
+  .section-title {
+    font-size: 28px;
+    letter-spacing: 0.84px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-title {
+    letter-spacing: 1.08px;
+    font-size: 36px;
+  }
 }
 
-.work-list, .filter, .div-footer, .clients, .team, .examples-list, .advantages, .main-nav {
+.work-list, .filter, .examples-list {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -89,28 +98,47 @@
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
   background-color: #ffffff;
 }
+@media screen and (min-width: 480px) {
+  .section {
+    padding: 60px 15px 60px 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
-.work-list, .filter, .subscribe, .social-list, .address-title, .div-footer, .clients, .social-media, .team, .examples-list, .advantages, .form-checkbox, .form-field, .form, .address-list-item, .address-list, .navigation, .main-nav {
+.work-list, .filter, .subscribe, .social-list, .address-title, .div-footer, .clients, .social-media, .examples-list, .form-checkbox, .form-field, .form, .address-list-item, .address-list, .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .section-title {
+  color: #212121;
   margin: 0;
   margin-bottom: 50px;
-  color: #212121;
   text-align: center;
-  font-size: 36px;
   font-weight: 700;
-  letter-spacing: 1.08px;
+}
+@media screen and (min-width: 480px) {
+  .section-title {
+    font-size: 28px;
+    letter-spacing: 0.84px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-title {
+    letter-spacing: 1.08px;
+    font-size: 36px;
+  }
 }
 
-.work-list, .filter, .div-footer, .clients, .team, .examples-list, .advantages, .main-nav {
+.work-list, .filter, .examples-list {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -136,10 +164,33 @@ header {
   border-bottom: solid 1px #ECECEC;
 }
 
-.main-nav {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media screen and (min-width: 768px) {
+  .main-nav {
+    width: 738px;
+    margin: 0 auto;
+    height: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main-nav {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    height: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .navigation {
@@ -148,6 +199,13 @@ header {
           align-items: center;
   margin: 0;
   padding: 0;
+}
+@media screen and (min-width: 768px) {
+  .navigation {
+    -webkit-column-gap: 50px;
+       -moz-column-gap: 50px;
+            column-gap: 50px;
+  }
 }
 .navigation-item {
   position: relative;
@@ -182,13 +240,27 @@ header {
   -webkit-transform: translateY(1px);
           transform: translateY(1px);
 }
-.navigation-item + .navigation-item {
-  margin-left: 50px;
-}
 
 .address-list {
   padding: 0;
   margin: 0 0 0 auto;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .address-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 96px;
+    row-gap: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .address-list {
+    -webkit-column-gap: 30px;
+       -moz-column-gap: 30px;
+            column-gap: 30px;
+  }
 }
 .address-list-item {
   -webkit-box-align: center;
@@ -210,27 +282,34 @@ header {
 .address-list-item:hover, .address-list-item:focus {
   color: #2196f3;
 }
-.address-list-item + .address-list-item {
-  margin-left: 50px;
-}
 
-.work-list, .filter, .subscribe, .social-list, .address-title, .div-footer, .clients, .social-media, .team, .examples-list, .advantages, .form-checkbox, .form-field, .form, .main-nav, .navigation, .address-list, .address-list-item {
+.work-list, .filter, .subscribe, .social-list, .address-title, .div-footer, .clients, .social-media, .examples-list, .form-checkbox, .form-field, .form, .navigation, .address-list, .address-list-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .section-title {
+  color: #212121;
   margin: 0;
   margin-bottom: 50px;
-  color: #212121;
   text-align: center;
-  font-size: 36px;
   font-weight: 700;
-  letter-spacing: 1.08px;
+}
+@media screen and (min-width: 480px) {
+  .section-title {
+    font-size: 28px;
+    letter-spacing: 0.84px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-title {
+    letter-spacing: 1.08px;
+    font-size: 36px;
+  }
 }
 
-.work-list, .filter, .div-footer, .clients, .team, .examples-list, .advantages, .main-nav {
+.work-list, .filter, .examples-list {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -260,27 +339,41 @@ header {
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero.jpg");
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
   background-position: center;
-  background-size: auto;
-  margin-bottom: 94px;
+  background-size: cover;
+  margin-bottom: 60px;
   width: 100%;
-  min-height: 600px;
+  min-height: 400px;
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    min-height: 600px;
+    margin-bottom: 94px;
+  }
 }
 .hero-content {
   position: absolute;
   text-align: center;
 }
 .hero-title {
-  width: 696px;
-  margin: 0 auto 30px;
   color: #ffffff;
-  font-size: 44px;
+  text-align: center;
   font-weight: 900;
-  line-height: 1.36;
-  letter-spacing: 2.64px;
+  line-height: 1.61;
+  letter-spacing: 1.56px;
   text-transform: uppercase;
+  width: 360px;
+  font-size: 26px;
+}
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 2.64px;
+    width: 696px;
+  }
 }
 .hero-btn {
-  padding: 10px 32px;
+  padding: 10px 24px;
   border-radius: 4px;
   border-color: transparent;
   cursor: pointer;
@@ -294,27 +387,52 @@ header {
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 1200px) {
+  .hero-btn {
+    padding: 10px 32px;
+    border-radius: 4px;
+    border-color: transparent;
+    cursor: pointer;
+    background-color: #2196f3;
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 1.87;
+    letter-spacing: 0.96px;
+    -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  }
+}
 .hero-btn:hover, .hero-btn:focus {
   background-color: #188CE8;
 }
 
-.work-list, .filter, .subscribe, .social-list, .address-title, .div-footer, .clients, .social-media, .team, .examples-list, .advantages, .form-checkbox, .form-field, .form, .main-nav, .navigation, .address-list, .address-list-item {
+.work-list, .filter, .subscribe, .social-list, .address-title, .div-footer, .clients, .social-media, .examples-list, .form-checkbox, .form-field, .form, .navigation, .address-list, .address-list-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .section-title {
+  color: #212121;
   margin: 0;
   margin-bottom: 50px;
-  color: #212121;
   text-align: center;
-  font-size: 36px;
   font-weight: 700;
-  letter-spacing: 1.08px;
+}
+@media screen and (min-width: 480px) {
+  .section-title {
+    font-size: 28px;
+    letter-spacing: 0.84px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-title {
+    letter-spacing: 1.08px;
+    font-size: 36px;
+  }
 }
 
-.work-list, .filter, .div-footer, .clients, .team, .examples-list, .advantages, .main-nav {
+.work-list, .filter, .examples-list {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -365,8 +483,6 @@ header {
   padding: 40px;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
-  width: 528px;
-  height: 581px;
   background-color: #ffffff;
   border-radius: 4px;
   -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
@@ -375,6 +491,18 @@ header {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 .modal-btn {
   position: absolute;
@@ -394,23 +522,33 @@ header {
   fill: #2196f3;
 }
 
-.work-list, .filter, .subscribe, .social-list, .address-title, .div-footer, .clients, .social-media, .team, .examples-list, .advantages, .form-checkbox, .form-field, .form, .main-nav, .navigation, .address-list, .address-list-item {
+.work-list, .filter, .subscribe, .social-list, .address-title, .div-footer, .clients, .social-media, .examples-list, .form-checkbox, .form-field, .form, .navigation, .address-list, .address-list-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .section-title {
+  color: #212121;
   margin: 0;
   margin-bottom: 50px;
-  color: #212121;
   text-align: center;
-  font-size: 36px;
   font-weight: 700;
-  letter-spacing: 1.08px;
+}
+@media screen and (min-width: 480px) {
+  .section-title {
+    font-size: 28px;
+    letter-spacing: 0.84px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-title {
+    letter-spacing: 1.08px;
+    font-size: 36px;
+  }
 }
 
-.work-list, .filter, .div-footer, .clients, .team, .examples-list, .advantages, .main-nav {
+.work-list, .filter, .examples-list {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -468,6 +606,16 @@ header {
   border: 1px solid rgba(33, 33, 33, 0.2);
   font-size: 12px;
 }
+@media screen and (min-width: 480px) {
+  .form-input {
+    width: 370px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form-input {
+    width: 448px;
+  }
+}
 .form-input.textarea {
   padding: 12px 16px 12px;
   height: 120px;
@@ -521,10 +669,21 @@ header {
           justify-content: center;
 }
 .form-checkbox .form-label {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.42px;
   margin: 0;
+}
+@media screen and (min-width: 480px) {
+  .form-checkbox .form-label {
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: 0.36px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form-checkbox .form-label {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.42px;
+  }
 }
 .form-checkbox .form-label-link {
   color: #2196f3;
@@ -575,23 +734,33 @@ header {
   background-color: #188CE8;
 }
 
-.work-list, .filter, .subscribe, .social-list, .address-title, .div-footer, .clients, .social-media, .team, .examples-list, .advantages, .main-nav, .navigation, .address-list, .address-list-item, .form, .form-field, .form-checkbox {
+.work-list, .filter, .subscribe, .social-list, .address-title, .div-footer, .clients, .social-media, .examples-list, .navigation, .address-list, .address-list-item, .form, .form-field, .form-checkbox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .section-title {
+  color: #212121;
   margin: 0;
   margin-bottom: 50px;
-  color: #212121;
   text-align: center;
-  font-size: 36px;
   font-weight: 700;
-  letter-spacing: 1.08px;
+}
+@media screen and (min-width: 480px) {
+  .section-title {
+    font-size: 28px;
+    letter-spacing: 0.84px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-title {
+    letter-spacing: 1.08px;
+    font-size: 36px;
+  }
 }
 
-.work-list, .filter, .div-footer, .clients, .team, .examples-list, .advantages, .main-nav {
+.work-list, .filter, .examples-list {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -615,9 +784,37 @@ header {
 
 .advantages {
   list-style: none;
+  padding: 0;
+  margin: 0 15px 60px 15px;
 }
-.advantages-item {
-  width: 270px;
+@media screen and (min-width: 480px) {
+  .advantages {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .advantages {
+    width: 738px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    row-gap: 30px;
+    -webkit-column-gap: 30px;
+       -moz-column-gap: 30px;
+            column-gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantages {
+    width: 1170px;
+  }
 }
 .advantages-item-cont {
   background-color: #F5F4FA;
@@ -629,7 +826,21 @@ header {
 .advantages-item-icon {
   width: 70px;
   height: 70px;
-  margin: 25px 100px 25px;
+}
+@media screen and (min-width: 480px) {
+  .advantages-item-icon {
+    margin: 25px 190px 25px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .advantages-item-icon {
+    margin: 25px 142px 25px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantages-item-icon {
+    margin: 25px 100px 25px;
+  }
 }
 .advantages-item-title {
   margin: 0;
@@ -639,28 +850,63 @@ header {
   font-weight: 700;
   letter-spacing: 0.42px;
   text-transform: uppercase;
+  text-align: center;
 }
-.advantages-item + .advantages-item {
-  margin-left: 30px;
+@media screen and (min-width: 768px) {
+  .advantages-item-title {
+    text-align: start;
+  }
+}
+@media screen and (min-width: 480px) {
+  .advantages-item {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .advantages-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .advantages-item {
+    width: 354px;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantages-item {
+    width: 270px;
+    margin: 0;
+  }
 }
 
-.work-list, .filter, .subscribe, .social-list, .address-title, .div-footer, .clients, .social-media, .team, .examples-list, .main-nav, .navigation, .address-list, .address-list-item, .form, .form-field, .form-checkbox, .advantages {
+.work-list, .filter, .subscribe, .social-list, .address-title, .div-footer, .clients, .social-media, .examples-list, .navigation, .address-list, .address-list-item, .form, .form-field, .form-checkbox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .section-title {
+  color: #212121;
   margin: 0;
   margin-bottom: 50px;
-  color: #212121;
   text-align: center;
-  font-size: 36px;
   font-weight: 700;
-  letter-spacing: 1.08px;
+}
+@media screen and (min-width: 480px) {
+  .section-title {
+    font-size: 28px;
+    letter-spacing: 0.84px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-title {
+    letter-spacing: 1.08px;
+    font-size: 36px;
+  }
 }
 
-.work-list, .filter, .div-footer, .clients, .team, .examples-list, .main-nav, .advantages {
+.work-list, .filter, .examples-list {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -682,6 +928,11 @@ header {
           transform: translate(-50%, -50%);
 }
 
+@media screen and (max-width: 1199px) {
+  .examples-section {
+    display: none;
+  }
+}
 .example {
   position: relative;
   height: 294px;
@@ -706,23 +957,33 @@ header {
   margin-left: 30px;
 }
 
-.work-list, .filter, .subscribe, .social-list, .address-title, .div-footer, .clients, .social-media, .team, .main-nav, .navigation, .address-list, .address-list-item, .form, .form-field, .form-checkbox, .advantages, .examples-list {
+.work-list, .filter, .subscribe, .social-list, .address-title, .div-footer, .clients, .social-media, .navigation, .address-list, .address-list-item, .form, .form-field, .form-checkbox, .examples-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .section-title {
+  color: #212121;
   margin: 0;
   margin-bottom: 50px;
-  color: #212121;
   text-align: center;
-  font-size: 36px;
   font-weight: 700;
-  letter-spacing: 1.08px;
+}
+@media screen and (min-width: 480px) {
+  .section-title {
+    font-size: 28px;
+    letter-spacing: 0.84px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-title {
+    letter-spacing: 1.08px;
+    font-size: 36px;
+  }
 }
 
-.work-list, .filter, .div-footer, .clients, .team, .main-nav, .advantages, .examples-list {
+.work-list, .filter, .examples-list {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -745,16 +1006,94 @@ header {
 }
 
 .team-section.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
   background-color: #F5F4FA;
 }
+@media screen and (min-width: 480px) {
+  .team-section.section {
+    padding: 60px 15px 60px 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-section.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
+.team {
+  padding: 0;
+}
+@media screen and (min-width: 480px) {
+  .team {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team {
+    width: 738px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    row-gap: 30px;
+    -webkit-column-gap: 30px;
+       -moz-column-gap: 30px;
+            column-gap: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    width: 1170px;
+  }
+}
 .team-member {
   -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
+}
+@media screen and (min-width: 480px) {
+  .team-member {
+    width: 450px;
+    height: 622px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+  .team-member img {
+    width: 450px;
+    height: 460px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team-member {
+    width: 354px;
+    height: 536px;
+    margin: 0;
+  }
+  .team-member img {
+    width: 354px;
+    height: 374px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-member {
+    width: 270px;
+    height: 428px;
+    margin: 0;
+  }
+  .team-member img {
+    width: 270px;
+    height: 260px;
+  }
 }
 .team-member-name {
   text-align: center;
@@ -770,9 +1109,6 @@ header {
   letter-spacing: 0.48px;
   margin-bottom: 16px;
 }
-.team-member + .team-member {
-  margin-left: 30px;
-}
 
 .social-media {
   padding: 0;
@@ -782,7 +1118,6 @@ header {
   -webkit-column-gap: 10px;
      -moz-column-gap: 10px;
           column-gap: 10px;
-  margin: 0 32px 30px;
 }
 .social-media-item {
   width: 44px;
@@ -798,24 +1133,49 @@ header {
   color: #ffffff;
   background-color: #2196f3;
 }
+@media screen and (min-width: 480px) {
+  .social-media {
+    margin: 0 122px 24px 122px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .social-media {
+    margin: 0 74px 24px 74px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .social-media {
+    margin: 0 32px 30px 32px;
+  }
+}
 
-.work-list, .filter, .subscribe, .social-list, .address-title, .div-footer, .clients, .main-nav, .navigation, .address-list, .address-list-item, .form, .form-field, .form-checkbox, .advantages, .examples-list, .team, .social-media {
+.work-list, .filter, .subscribe, .social-list, .address-title, .div-footer, .clients, .navigation, .address-list, .address-list-item, .form, .form-field, .form-checkbox, .examples-list, .social-media {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .section-title {
+  color: #212121;
   margin: 0;
   margin-bottom: 50px;
-  color: #212121;
   text-align: center;
-  font-size: 36px;
   font-weight: 700;
-  letter-spacing: 1.08px;
+}
+@media screen and (min-width: 480px) {
+  .section-title {
+    font-size: 28px;
+    letter-spacing: 0.84px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-title {
+    letter-spacing: 1.08px;
+    font-size: 36px;
+  }
 }
 
-.work-list, .filter, .div-footer, .clients, .main-nav, .advantages, .examples-list, .team {
+.work-list, .filter, .examples-list {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -838,43 +1198,90 @@ header {
 }
 
 .clients {
+  padding: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 15px 60px 15px;
   -webkit-column-gap: 30px;
      -moz-column-gap: 30px;
           column-gap: 30px;
-  margin-bottom: 94px;
+  row-gap: 30px;
+}
+@media screen and (min-width: 480px) {
+  .clients {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .clients {
+    width: 738px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    width: 1170px;
+  }
 }
 .clients-item {
   border-radius: 4px;
   border: 1px solid #AFB1B8;
-  padding: 16px 32px 16px;
-  width: 170px;
   height: 92px;
   color: #AFB1B8;
   -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 480px) {
+  .clients-item {
+    width: 210px;
+    padding: 16px 52px 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .clients-item {
+    width: 226px;
+    padding: 16px 60px 16px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients-item {
+    width: 170px;
+    padding: 16px 32px 16px;
+  }
 }
 .clients-item:hover, .clients-item:focus {
   border: 1px solid #2196f3;
   color: #2196f3;
 }
 
-.work-list, .filter, .subscribe, .social-list, .address-title, .div-footer, .main-nav, .navigation, .address-list, .address-list-item, .form, .form-field, .form-checkbox, .advantages, .examples-list, .team, .social-media, .clients {
+.work-list, .filter, .subscribe, .social-list, .address-title, .div-footer, .navigation, .address-list, .address-list-item, .form, .form-field, .form-checkbox, .examples-list, .social-media, .clients {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .section-title {
+  color: #212121;
   margin: 0;
   margin-bottom: 50px;
-  color: #212121;
   text-align: center;
-  font-size: 36px;
   font-weight: 700;
-  letter-spacing: 1.08px;
+}
+@media screen and (min-width: 480px) {
+  .section-title {
+    font-size: 28px;
+    letter-spacing: 0.84px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-title {
+    letter-spacing: 1.08px;
+    font-size: 36px;
+  }
 }
 
-.work-list, .filter, .div-footer, .main-nav, .advantages, .examples-list, .team, .clients {
+.work-list, .filter, .examples-list {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -902,9 +1309,76 @@ footer {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .div-footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    row-gap: 60px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .div-footer {
+    width: 603px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-column-gap: 165px;
+       -moz-column-gap: 165px;
+            column-gap: 165px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .div-footer {
+    width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+  }
+}
+
 .nav-footer {
-  width: 231px;
-  margin-right: 70px;
+  width: 232px;
+}
+@media screen and (min-width: 480px) {
+  .nav-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
 }
 
 .address-title {
@@ -919,6 +1393,17 @@ footer {
   line-height: 1.71;
   letter-spacing: 0.42px;
 }
+@media screen and (min-width: 480px) {
+  .address-title {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .address-title {
+    text-align: left;
+    width: 231px;
+  }
+}
 .address-title-link {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
@@ -929,23 +1414,33 @@ footer {
   color: #2196f3;
 }
 
-.work-list, .filter, .subscribe, .social-list, .main-nav, .navigation, .address-list, .address-list-item, .form, .form-field, .form-checkbox, .advantages, .examples-list, .team, .social-media, .clients, .div-footer, .address-title {
+.work-list, .filter, .subscribe, .social-list, .navigation, .address-list, .address-list-item, .form, .form-field, .form-checkbox, .examples-list, .social-media, .clients, .div-footer, .address-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .section-title {
+  color: #212121;
   margin: 0;
   margin-bottom: 50px;
-  color: #212121;
   text-align: center;
-  font-size: 36px;
   font-weight: 700;
-  letter-spacing: 1.08px;
+}
+@media screen and (min-width: 480px) {
+  .section-title {
+    font-size: 28px;
+    letter-spacing: 0.84px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-title {
+    letter-spacing: 1.08px;
+    font-size: 36px;
+  }
 }
 
-.work-list, .filter, .main-nav, .advantages, .examples-list, .team, .clients, .div-footer {
+.work-list, .filter, .examples-list {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -967,13 +1462,34 @@ footer {
           transform: translate(-50%, -50%);
 }
 
+.social-footer {
+  width: 206px;
+}
+@media screen and (min-width: 1200px) {
+  .social-footer {
+    margin-left: 70px;
+  }
+}
+
 .footer-title {
-  margin: 12px 0 20px;
+  margin: 0;
   color: #ffffff;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.42px;
   text-transform: uppercase;
+}
+@media screen and (min-width: 480px) {
+  .footer-title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-title {
+    text-align: left;
+    margin: 12px 0 20px;
+  }
 }
 
 .social-list {
@@ -1000,23 +1516,33 @@ footer {
   background-color: #2196f3;
 }
 
-.work-list, .filter, .subscribe, .main-nav, .navigation, .address-list, .address-list-item, .form, .form-field, .form-checkbox, .advantages, .examples-list, .team, .social-media, .clients, .div-footer, .address-title, .social-list {
+.work-list, .filter, .subscribe, .navigation, .address-list, .address-list-item, .form, .form-field, .form-checkbox, .examples-list, .social-media, .clients, .div-footer, .address-title, .social-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .section-title {
+  color: #212121;
   margin: 0;
   margin-bottom: 50px;
-  color: #212121;
   text-align: center;
-  font-size: 36px;
   font-weight: 700;
-  letter-spacing: 1.08px;
+}
+@media screen and (min-width: 480px) {
+  .section-title {
+    font-size: 28px;
+    letter-spacing: 0.84px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-title {
+    letter-spacing: 1.08px;
+    font-size: 36px;
+  }
 }
 
-.work-list, .filter, .main-nav, .advantages, .examples-list, .team, .clients, .div-footer {
+.work-list, .filter, .examples-list {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -1039,18 +1565,70 @@ footer {
 }
 
 .subscribe-section {
-  margin-left: 93px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe-section {
+    margin-left: 93px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
 }
 
+@media screen and (min-width: 480px) {
+  .subscribe {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    row-gap: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-column-gap: 12px;
+       -moz-column-gap: 12px;
+            column-gap: 12px;
+  }
+}
 .subscribe-email {
   padding: 15px 16px;
-  width: 358px;
   height: 50px;
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background: rgba(33, 150, 243, 0);
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+@media screen and (min-width: 480px) {
+  .subscribe-email {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscribe-email {
+    width: 358px;
+  }
 }
 .subscribe-email:focus {
   color: #ffffff;
@@ -1059,7 +1637,6 @@ footer {
   position: relative;
 }
 .subscribe-btn {
-  margin-left: 12px;
   height: 50px;
   padding: 10px 62px 10px 28px;
   border-radius: 4px;
@@ -1081,23 +1658,33 @@ footer {
   top: 13px;
 }
 
-.work-list, .filter, .main-nav, .navigation, .address-list, .address-list-item, .form, .form-field, .form-checkbox, .advantages, .examples-list, .team, .social-media, .clients, .div-footer, .address-title, .social-list, .subscribe {
+.work-list, .filter, .navigation, .address-list, .address-list-item, .form, .form-field, .form-checkbox, .examples-list, .social-media, .clients, .div-footer, .address-title, .social-list, .subscribe {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .section-title {
+  color: #212121;
   margin: 0;
   margin-bottom: 50px;
-  color: #212121;
   text-align: center;
-  font-size: 36px;
   font-weight: 700;
-  letter-spacing: 1.08px;
+}
+@media screen and (min-width: 480px) {
+  .section-title {
+    font-size: 28px;
+    letter-spacing: 0.84px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-title {
+    letter-spacing: 1.08px;
+    font-size: 36px;
+  }
 }
 
-.work-list, .filter, .main-nav, .advantages, .examples-list, .team, .clients, .div-footer {
+.work-list, .filter, .examples-list {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -1155,23 +1742,33 @@ footer {
           box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
-.work-list, .main-nav, .navigation, .address-list, .address-list-item, .form, .form-field, .form-checkbox, .advantages, .examples-list, .team, .social-media, .clients, .div-footer, .address-title, .social-list, .subscribe, .filter {
+.work-list, .navigation, .address-list, .address-list-item, .form, .form-field, .form-checkbox, .examples-list, .social-media, .clients, .div-footer, .address-title, .social-list, .subscribe, .filter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .section-title {
+  color: #212121;
   margin: 0;
   margin-bottom: 50px;
-  color: #212121;
   text-align: center;
-  font-size: 36px;
   font-weight: 700;
-  letter-spacing: 1.08px;
+}
+@media screen and (min-width: 480px) {
+  .section-title {
+    font-size: 28px;
+    letter-spacing: 0.84px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-title {
+    letter-spacing: 1.08px;
+    font-size: 36px;
+  }
 }
 
-.work-list, .main-nav, .advantages, .examples-list, .team, .clients, .div-footer, .filter {
+.work-list, .examples-list, .filter {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;

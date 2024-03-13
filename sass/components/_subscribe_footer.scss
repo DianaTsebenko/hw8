@@ -3,19 +3,49 @@
 @import '../utils/placeholders';
 
 .subscribe-section{
-    margin-left: 93px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (min-width: 1200px) {
+        margin-left: 93px;
+        align-items: flex-start;
+    }
+    // .footer-title{
+    //     margin: 12px 0 20px;
+    //     @include secondaryTexsts($primary-white-color);
+    //     @media screen and (min-width:480px) {
+    //         text-align: center;
+    //     }
+    // }
 }
 .subscribe{
     @extend %doFlex;
+
+    @media screen and (min-width:480px) {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+    }
+    @media screen and (min-width:1200px) {
+        flex-direction: row;
+        align-items: center;
+        column-gap: 12px;
+    }
     &-email{
         padding: 15px 16px;
-        width: 358px;
+        // width: 358px;
         height: 50px; 
         border-radius: 4px;
         border: 1px solid rgba(255, 255, 255, 0.30);
         background: rgba(33, 150, 243, 0.00);
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
         
+        @media screen and (min-width:480px) {
+            width: 450px;
+        }
+        @media screen and (min-width:1200px) {
+            width: 358px;
+        }
         &:focus{
             color: $primary-white-color;
         }
@@ -24,7 +54,7 @@
         position: relative;
     }
     &-btn{
-        margin-left: 12px;
+        // margin-left: 12px;
         height: 50px;
         @include buttonType(62px 10px 28px);
         @include useTransition(background-color);

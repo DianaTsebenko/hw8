@@ -7,9 +7,24 @@ header{
 }
 
 .main-nav{
-    @extend %container;
-    @extend %doFlex;
-    align-items: center;
+    @media screen and  (min-width:768px){
+        width: 738px;
+        margin: 0 auto;
+        height: 80px;
+        display: flex;
+        align-items: center; 
+    }
+
+    @media screen and (min-width:1200px) {
+        width: 1200px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 0 auto;
+        height: 80px;
+        display: flex;
+        align-items: center;
+    }
+    
 }
 .navigation{
     @extend %list;
@@ -17,6 +32,9 @@ header{
     align-items: center;
     margin: 0;
     padding: 0;
+    @media screen and (min-width: 768px) {
+        column-gap: 50px;
+    }
 
     &-item{
         position: relative;
@@ -53,9 +71,7 @@ header{
             transform: translateY(1px);
         }
     }
-    &-item + &-item{
-        margin-left: 50px;
-    }
+    
 
 }
 
@@ -64,13 +80,20 @@ header{
     @extend %list;
     padding: 0;
     margin: 0 0 0 auto;
-    
+    @media screen and (min-width: 768px) and (max-width:1199px) {
+        flex-direction: column;
+        margin-left: 96px;
+        row-gap: 10px;
+    }
+    @media screen and (min-width: 1200px) {
+        column-gap: 30px;
+    }
 
     &-item{
         @extend %doFlex;
         align-items: center;
         @include useTransition(color);
-
+        
         &-icon{
             fill: currentColor;
             margin-right: 10px;
@@ -88,8 +111,5 @@ header{
         }
     }
     
-    &-item + &-item{
-        margin-left: 50px;
-    }
     
 }

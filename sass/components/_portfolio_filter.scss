@@ -3,22 +3,45 @@
 @import '../utils/placeholders';
 
 .portfolio{
-    padding-top: 94px;
-    padding-bottom: 94px;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (max-width: 767px) {
+        width: 480px;
+    }
+    @media screen and (max-width: 1199px) {
+        padding: 60px 15px 60px 15px;
+        
+    }
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+    
 }
 
 .filter{
 
     @extend %doFlex;
-    @extend %container;
     @extend %list;
+    margin: 0;
+    padding: 0;
 
-    justify-content: center;
-
-
-    &-item:not(:first-child){
-        margin-left: 8px;
+    @media screen and (min-width:480px) and (max-width:767px){
+        max-width: 350px;
+        column-gap: 8px;
+        row-gap: 15px;
+        justify-content: flex-start;
+        flex-wrap: wrap;
     }
+    @media screen and (min-width:768px) {
+        width: 100%;
+        column-gap: 8px;
+        row-gap: 0;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+
 
     &-btn {
         border-radius: 4px;

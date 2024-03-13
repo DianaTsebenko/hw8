@@ -4,12 +4,13 @@
 
 footer {
   background-color: $bck-color;
+  width: 100%;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 .div-footer{
     @extend %doFlex;
-    @media screen and (min-width: 480px) and (max-width:1199px){
+    @media screen and (max-width:1199px){
       flex-direction: column;
       align-items: center;
       row-gap: 60px;
@@ -33,7 +34,7 @@ footer {
 .nav-footer{
     width: 232px;
     // margin-right: 70px;
-    @media screen and (min-width: 480px) {
+    @media screen and (max-width: 1199px) {
       display: flex;
       flex-direction: column;
       align-items: center;

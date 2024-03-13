@@ -3,19 +3,38 @@
 @import '../utils/placeholders';
 
 .work-list{
-    @extend %doFlex;
-    @extend %container;
     @extend %list;
+    padding: 0;
     margin-top: 50px;
-    flex-wrap: wrap;
-    row-gap: 30px;
-    column-gap: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    @media screen and (min-width:480px) {
+        max-width: 450px;
+    }
+    @media screen and (min-width:768px) {
+        min-width: 768px;
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 30px;
+        column-gap: 30px;
+    }
+    @media screen and (min-width:1200px) {
+        max-width: 1200px;
+    }
 }
 
 .work{
-    width: 370px;
-    height: 404px;
-    border: 1px solid #EEE; 
+    border: 1px solid #EEE;
+    @media screen and (max-width: 767px) {
+        margin-bottom: 30px;
+    }
+    @media screen and (min-width: 767px) {
+        width: calc((100% - 30px)/2);
+    }
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 60px)/3);
+    }
+     
 
     @include useTransition(box-shadow);
 
@@ -39,6 +58,9 @@
         position: relative;
         height: 294px;
         overflow: hidden;
+    }
+    img{
+        width: 100%; 
     }
     &-overlay{
         position: absolute;

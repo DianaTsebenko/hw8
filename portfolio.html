@@ -16,23 +16,41 @@
     <header>
       <div class="main-nav">
         <a class="logo_header" href="./index.html"><span>Web</span>Studio</a>
-        <nav> 
-          <ul class="navigation">
-            <li class="navigation-item"><a class="navigation-link" href="./index.html">Студія</a></li>
-            <li class="navigation-item"><a class="navigation-link current" href="./portfolio.html">Портфоліо</a></li>
-            <li class="navigation-item"><a class="navigation-link" href="">Контакти</a></li>
-          </ul>
-        </nav>
-        <ul class="address-list">
-          <li class="address-list-item">
-            <svg class="address-list-item-icon" width="16" height="12"><use href="./images/sprite.svg#icon-envelope"></use></svg>
-            <a class="address-list-item-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-          </li>
-          <li class="address-list-item">
-            <svg class="address-list-item-icon" width="10" height="16"><use href="./images/sprite.svg#icon-smartphone"></use></svg>
-            <a class="address-list-item-link" href="tel:+380961111111">+38 096 111 11 11</a>
-          </li>
+        <button type="button" class="menu-btn" aria-controls="menu_container" data-menu-open>
+          <svg width="40" height="40" class="menu">
+            <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <div class="menu_container" id="menu_container" data-menu>
+          <button type="button" class="menu-btn-close" data-menu-close>
+            <svg width="40" height="40" class="menu">
+              <use class="icon-cross" href="./images/sprite.svg#icon-menu_close"></use>
+            </svg>
+          </button>
+          <nav> 
+            <ul class="navigation">
+              <li class="navigation-item"><a class="navigation-link" href="./index.html">Студія</a></li>
+              <li class="navigation-item"><a class="navigation-link current" href="./portfolio.html">Портфоліо</a></li>
+              <li class="navigation-item"><a class="navigation-link" href="">Контакти</a></li>
+            </ul>
+          </nav>
+          <ul class="address-list">
+            <li class="address-list-item">
+              <svg class="address-list-item-icon" width="16" height="12"><use href="./images/sprite.svg#icon-envelope"></use></svg>
+              <a class="address-list-item-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li class="address-list-item">
+              <svg class="address-list-item-icon" width="10" height="16"><use href="./images/sprite.svg#icon-smartphone"></use></svg>
+              <a class="address-list-item-link tel" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
         </ul>
+        <ul class="social-nav">
+          <li class="social-nav-item"><a class="social-nav-link" href="">Instagram</a></li>
+          <li class="social-nav-item"><a class="social-nav-link" href="">Twitter</a></li>
+          <li class="social-nav-item"><a class="social-nav-link" href="">Facebook</a></li>
+          <li class="social-nav-item"><a class="social-nav-link" href="">LinkedIn</a></li>
+        </ul>
+      </div>
         
       </div>
     </header>
@@ -51,8 +69,7 @@
               <img
                 src="./images/technokryak.jpg"
                 alt="Веб-сай Технокряк"
-                width="370"
-                height="294"
+                
               />
               <div class="work-overlay">
                 <p class="work-overlay-title">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
@@ -66,8 +83,7 @@
               <img
                 src="./images/posterneworlean.jpg"
                 alt="Постер New Orlean vs Golden Star"
-                width="370"
-                height="294"
+                
               />
               <div class="work-overlay">
                 <p class="work-overlay-title">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
@@ -81,8 +97,7 @@
               <img
                 src="./images/restoraunt.jpg"
                 alt="Логотип Ресторану Seafood"
-                width="370"
-                height="294"
+                
               />
               <div class="work-overlay">
                 <p class="work-overlay-title">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
@@ -96,8 +111,7 @@
               <img
                 src="./images/projectprime.jpg"
                 alt="Наушники"
-                width="370"
-                height="294"
+                
               />
               <div class="work-overlay">
                 <p class="work-overlay-title">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
@@ -111,8 +125,7 @@
               <img
                 src="./images/projectboxes.jpg"
                 alt="Дві коробки"
-                width="370"
-                height="294"
+                
               />
               <div class="work-overlay">
                 <p class="work-overlay-title">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
@@ -126,8 +139,7 @@
               <img
                 src="./images/inspiration.jpg"
                 alt="IMac з веб-сайтом Inspiration has no Borders"
-                width="370"
-                height="294"
+                
               />
               <div class="work-overlay">
                 <p class="work-overlay-title">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
@@ -141,8 +153,7 @@
               <img
                 src="./images/limitededition.jpg"
                 alt="Журнал з виданням Limited Edition"
-                width="370"
-                height="294"
+                
               />
               <div class="work-overlay">
                 <p class="work-overlay-title">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
@@ -156,8 +167,7 @@
               <img
                 src="./images/projectlab.jpg"
                 alt="Мокап проєкту LAB"
-                width="370"
-                height="294"
+                
               />
               <div class="work-overlay">
                 <p class="work-overlay-title">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
@@ -171,8 +181,7 @@
               <img
                 src="./images/growingbusiness.jpg"
                 alt="Ноутбук з додатком Growing Business"
-                width="370"
-                height="294"
+                
               />
               <div class="work-overlay">
                 <p class="work-overlay-title">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
@@ -189,9 +198,9 @@
         <div class="nav-footer">
           <a class="logo_footer" href="./index.html"><span>Web</span>Studio</a>
           <address class="address-title">
-            м. Київ, пр-т Лесі Українки, 26<br/>
+            м. Київ, пр-т Лесі Українки, 26
             <a class="address-title-link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a><br/>
+              >info@devstudio.com</a>
             <a class="address-title-link" href="tel:+380961111111">+38 096 111 11 11</a>
         </address>
       </div>
@@ -217,5 +226,6 @@
     </div>
       
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

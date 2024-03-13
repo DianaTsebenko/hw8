@@ -5,16 +5,16 @@
 
 .advantages{
     list-style: none;
-    padding: 0;
-    margin: 0 15px 60px 15px;
+    padding: 0 15px;
+    margin-bottom: 60px;
     
     @media screen and (min-width: 480px){
-        width: 450px;
+        width: 480px;
         margin-left: auto;
         margin-right: auto;
     }
     @media screen and (min-width: 768px){
-        width: 738px;
+        width: 768px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -27,6 +27,7 @@
 
     }
     &-item{
+        width: 100%;
         
         &-cont{
             background-color: $second-bck-color;
@@ -38,15 +39,7 @@
         &-icon{
             width: 70px;
             height: 70px;
-            @media screen and (min-width: 480px){
-                margin: 25px 190px 25px;
-            }
-            @media screen and (min-width: 768px){
-                margin: 25px 142px 25px;
-            }
-            @media screen and (min-width: 1200px){
-                margin: 25px 100px 25px;
-            }
+            margin: 25px auto;
         }
         
         &-title{
@@ -59,7 +52,7 @@
             }
         }
         @media screen and (min-width: 480px){
-            width: 450px;
+            width: 100%;
             margin-left: auto;
             margin-right: auto;
 
@@ -68,11 +61,11 @@
             }  
         }
         @media screen and (min-width: 768px){
-            width: 354px;
+            width: calc((100% - 60px)/2);
             margin: 0;
         }
         @media screen and (min-width: 1200px){
-            width: 270px;
+            width: calc((100% - 90px)/4);
             margin: 0;
         }
         

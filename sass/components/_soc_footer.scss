@@ -13,10 +13,9 @@
 .footer-title{
     margin: 0;
     @include secondaryTexsts($primary-white-color);
-    @media screen and (max-width:1199px) {
-        text-align: center;
-        margin-bottom: 20px;
-    }
+    text-align: center;
+    margin-bottom: 20px;
+
     @media screen and (min-width:1200px) {
         text-align: left;
         margin: 12px 0 20px;

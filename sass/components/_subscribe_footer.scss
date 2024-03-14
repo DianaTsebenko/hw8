@@ -20,15 +20,12 @@
 }
 .subscribe{
     @extend %doFlex;
-
-    @media screen and (max-width:1199px) {
-        flex-direction: column;
-        align-items: center;
-        row-gap: 20px;
-    }
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    
     @media screen and (min-width:1200px) {
         flex-direction: row;
-        align-items: center;
         column-gap: 12px;
     }
     &-email{
@@ -38,12 +35,10 @@
         border: 1px solid rgba(255, 255, 255, 0.30);
         background: rgba(33, 150, 243, 0.00);
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-        @media screen and (max-width:479px) {
-            max-width: 100%;
-            padding-left: auto;
-            padding-right: auto;
-        }
 
+        max-width: 100%;
+        padding-left: auto;
+        padding-right: auto;
         @media screen and (min-width:480px) {
             width: 450px;
         }

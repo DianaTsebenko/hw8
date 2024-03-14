@@ -56,6 +56,9 @@
         height: 50px;
         @include buttonType(62px 10px 28px);
         @include useTransition(background-color);
+        &:hover, &:focus{
+            background-color: $hover-accent-color;
+        }
     }
     &-icon{
         position: absolute;

@@ -2037,7 +2037,7 @@ footer {
 
 .work {
   border: 1px solid #EEE;
-  max-width: 450px;
+  max-width: 420px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
@@ -2048,6 +2048,12 @@ footer {
 }
 .work img {
   width: 100%;
+}
+@media screen and (min-width: 480px) {
+  .work {
+    max-width: 450px;
+    margin: 0;
+  }
 }
 @media screen and (min-width: 768px) {
   .work {

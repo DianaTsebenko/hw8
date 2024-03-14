@@ -9,11 +9,9 @@
 .team{
     @extend %list;
     padding: 0;
-    @media screen and (min-width:480px) {
-        max-width: 450px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
     @media screen and (min-width:768px) {
         max-width: 738px;
         display: flex;
@@ -21,8 +19,6 @@
         justify-content: center;
         row-gap: 30px;
         column-gap: 30px;
-        margin-left: auto;
-        margin-right: auto;
     }
     @media screen and (min-width:1200px) {
         max-width: 1170px;
@@ -31,19 +27,16 @@
         box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
         border-radius: 0px 0px 4px 4px;
         background-color: $primary-white-color;
-        
-
-        
-        @media screen and (min-width:480px) {
-            width: 450px;
-            height: 622px;
-            margin-left: auto;
-            margin-right: auto;
-            margin-bottom: 30px;
-            img{
-                width: 450px;
-                height: 460px;
-            }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 450px;
+        max-height: 622px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+        img{
+            width: 100%;
         }
         @media screen and (min-width:768px) {
             width: 354px;
@@ -84,9 +77,8 @@
 
 .social-media{
     @include socialMedia($icon-color, $primary-white-color, $primary-white-color, $accent-color);
-    
-    @media screen and (min-width:480px) {
-        margin: 0 122px 24px 122px;
+    @media screen and (max-width:767px) {
+        padding-bottom: 24px;  
     }
     @media screen and (min-width:768px) {
         margin: 0 74px 24px 74px;

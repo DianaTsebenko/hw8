@@ -1248,20 +1248,12 @@ header {
     height: 536px;
     margin: 0;
   }
-  .team-member img {
-    width: 354px;
-    height: 374px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .team-member {
     width: 270px;
     height: 428px;
     margin: 0;
-  }
-  .team-member img {
-    width: 270px;
-    height: 260px;
   }
 }
 .team-member-name {
